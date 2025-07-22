@@ -1,0 +1,102 @@
+<!-- Hero Banner -->
+<section class="bg-dark text-light text-center p-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">
+      <i class="fas fa-store-alt me-2"></i>Welcome to TechsBeta Store
+    </h1>
+    <p class="lead">Discover top-quality products at unbeatable prices</p>
+    <a routerLink="/products" class="btn btn-warning btn-lg mt-3">
+      <i class="bi bi-cart-fill me-2"></i> Shop Now
+    </a>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">
+      <i class="bi bi-grid-fill me-2"></i> Explore Categories
+    </h2>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let cat of categories">
+        <div class="card shadow-sm mb-3">
+          <img [src]="cat.image" class="card-img-top" alt="{{ cat.name }} image" />
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-tag-fill me-2 text-primary"></i>{{ cat.name }}
+            </h5>
+            <p class="card-text">Browse best-in-class {{ cat.name }} products</p>
+            <a routerLink="/products" class="btn btn-outline-primary btn-sm">
+              <i class="bi bi-eye-fill me-1"></i> View
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">
+      <i class="fas fa-fire me-2 text-danger"></i>Trending Products
+    </h2>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let product of products">
+        <div class="card h-100 shadow-sm">
+          <img [src]="product.image" class="card-img-top" alt="Product image" />
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <i class="fas fa-box-open me-2"></i>{{ product.name }}
+            </h5>
+            <p class="card-text text-muted">$ {{ product.price }}</p>
+            <button class="btn btn-sm btn-primary">
+              <i class="bi bi-cart-plus-fill me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="bg-primary text-white text-center p-5">
+  <div class="container">
+    <h2>
+      <i class="bi bi-envelope-fill me-2"></i>Join Our Newsletter
+    </h2>
+    <p>Get exclusive deals and updates directly in your inbox.</p>
+    <form class="row justify-content-center">
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Enter your email" />
+      </div>
+      <div class="col-md-2 mt-2 mt-md-0">
+        <button type="submit" class="btn btn-light w-100">
+          <i class="bi bi-send-fill me-1"></i> Subscribe
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Customer Testimonials -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">
+      <i class="fas fa-comment-dots me-2 text-info"></i>What Our Customers Say
+    </h2>
+    <div class="row text-center">
+      <div class="col-md-4" *ngFor="let t of [1,2,3]">
+        <div class="p-4 shadow-sm bg-white rounded mb-3">
+          <p>
+            <i class="fas fa-quote-left me-2 text-secondary"></i>“Amazing product quality and fast delivery!”
+          </p>
+          <strong>- Customer {{ t }}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

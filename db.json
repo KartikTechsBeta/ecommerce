@@ -1,0 +1,8 @@
+{
+  "products": [
+    { "id": 1, "title": "Laptop", "price": 50000, "image": "laptop.jpg" }
+  ],
+  "users": [],
+  "orders": [],
+  "cart": []
+}
