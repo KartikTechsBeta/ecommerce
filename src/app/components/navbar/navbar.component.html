@@ -1,31 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+<nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" routerLink="/">
-      <i class="fas fa-store-alt me-2"></i> TechsBeta
+      <i class="fas fa-gem me-2 fs-4 text-skyblue"></i>
+      <span class="fw-bold text-dark fs-5">QuickPick</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-center gap-3">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">
-            <i class="bi bi-house-door me-1"></i> Home
-          </a>
+          <a class="nav-link custom-link" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/products">
-            <i class="bi bi-grid-fill me-1"></i> Products
-          </a>
+          <a class="nav-link custom-link" routerLink="/products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/cart">
-            <i class="bi bi-cart-fill me-1"></i> Cart
-          </a>
+          <a class="nav-link custom-link" routerLink="/cart">Cart</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/login">
+          <a class="btn btn-skyblue px-3 py-1 rounded-pill" routerLink="/login">
             <i class="fas fa-sign-in-alt me-1"></i> Login
           </a>
         </li>

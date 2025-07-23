@@ -1,0 +1,29 @@
+:root {
+  --skyblue: #0ea5e9;
+  --skyblue-dark: #0284c7;
+}
+
+.text-skyblue {
+  color: var(--skyblue);
+}
+
+.custom-link {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.custom-link:hover {
+  color: var(--skyblue);
+}
+
+.btn-skyblue {
+  background-color: var(--skyblue);
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-skyblue:hover {
+  background-color: var(--skyblue-dark);
+}
