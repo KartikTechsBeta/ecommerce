@@ -14,48 +14,70 @@ export class HomeComponent {
   categories = [
   {
     name: 'Electronics',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Circuit board macro
+    image: 'assets/images/categories/Electronics/E1.jpg' 
   },
   {
     name: 'Fashion',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Clothes on hanger
+    image: 'assets/images/categories/Fashion/fashion.jpg' // Clothes hanging with aesthetic vibe
   },
   {
     name: 'Home',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Cozy home interior
+    image: 'assets/images/categories/Home/home app 1.jpg' // Cozy modern living room
   },
   {
     name: 'Gadgets',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Flatlay with gadgets
+    image: 'assets/images/categories/Gadgets/camera.jpg' // Laptop + tech desk setup
   }
 ];
+
 
 products = [
   {
     name: 'Wireless Headphones',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Black wireless headphones
-    ,
+    image: 'assets/images/Trendings/wireless headphone.jpg', // Sleek black headphones
     price: 199
   },
   {
-    name: 'Smart Watch',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Modern smart watch
-    ,
-    price: 149
-  },
-  {
     name: 'Home Lamp',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // Stylish lamp
-    ,
+    image: 'assets/images/Trendings/lamp.jpg', // Minimal modern lamp
     price: 89
   },
   {
+    name: 'Smart Watch',
+    image: 'assets/images/Trendings/smartwatch.jpg', // Modern watch close-up
+    price: 149
+  },
+  {
     name: 'Sneakers',
-    image: 'https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=500&q=60' // White sneakers
-    ,
+    image: 'assets/images/Trendings/shoes 1.jpg', // Stylish white sneakers
     price: 129
   }
 ];
+
+testimonials = [
+  {
+    name: 'Aarav Mehta',
+    location: 'Mumbai, India',
+    image: 'https://randomuser.me/api/portraits/men/32.jpg',
+    message: 'Top-notch service and quality. My go-to store now!',
+    rating: 5
+  },
+  {
+    name: 'Sanya Kapoor',
+    location: 'Delhi, India',
+    image: 'https://randomuser.me/api/portraits/women/44.jpg',
+    message: 'Great packaging and timely delivery. Loved the experience!',
+    rating: 4
+  },
+  {
+    name: 'Ishaan Sharma',
+    location: 'Bangalore, India',
+    image: 'https://randomuser.me/api/portraits/men/85.jpg',
+    message: 'Customer support is super helpful. Highly recommended.',
+    rating: 5
+  }
+];
+
 
 }
 

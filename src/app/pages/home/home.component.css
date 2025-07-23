@@ -1,0 +1,118 @@
+.hero-banner {
+  position: relative;
+  min-height: 100vh;
+  background: url('../../../assets/images/Home/hi.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.hero-banner .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.hero-banner h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.hero-banner p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+}
+
+.hero-banner .btn-theme {
+  background-color: var(--theme-color);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.hero-banner .btn-theme:hover {
+  background-color: var(--theme-hover);
+  box-shadow: 0 0 10px rgba(78, 158, 255, 0.4);
+}
+/* Section Background */
+.skywave-bg {
+  background: linear-gradient(to right, #f0f7ff, #ffffff);
+}
+
+/* Category Card */
+.category-card {
+  transition: 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(78, 158, 255, 0.2);
+}
+
+.category-card .card-title {
+  color: #222;
+}
+
+.category-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.btn-theme {
+  background-color: #4e9eff; /* Sky blue */
+  color: #fff !important;
+  border: none;
+  border-radius: 50px;
+  padding: 0.4rem 1.2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+  background-color: #3a8de0;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(78, 158, 255, 0.4);
+}
+/* Background for section (light blue or gradient) */
+.trending-bg {
+  background: linear-gradient(to right, #f9fbff, #eef5ff);
+}
+
+/* Card styling */
+.trending-card {
+  border-radius: 12px;
+  transition: 0.3s ease;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.trending-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(78, 158, 255, 0.15);
+}
+
+.trending-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Theme button style */
+.btn-theme {
+  background-color: #4e9eff;
+  color: #fff !important;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-theme:hover {
+  background-color: #3a8de0;
+  box-shadow: 0 0 10px rgba(78, 158, 255, 0.4);
+}
