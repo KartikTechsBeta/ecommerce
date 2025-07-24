@@ -1,9 +1,7 @@
-.card {
-  transition: transform 0.2s ease;
-  border-radius: 12px;
+.text-skyblue {
+  color: #0ea5e9;
+}
 
-  &:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
+.border-4 {
+  border-width: 4px !important;
 }
