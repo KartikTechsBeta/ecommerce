@@ -1,26 +1,33 @@
+<h4>gb</h4>
 <div class="container py-5">
   <div *ngFor="let category of categorizedProducts" class="mb-5">
 
-    <h3 class="mb-3">
-      <i class="bi bi-tags-fill me-2 text-primary"></i>{{ category.category }}
+    <!-- Category Title -->
+    <h3 class="mb-3 border-start border-4 ps-3 text-skyblue">
+      <i class="bi bi-tags-fill me-2 text-skyblue"></i>{{ category.category }}
     </h3>
 
-    <div class="d-flex overflow-auto">
+    <!-- Horizontal Product Scroll -->
+    <div class="d-flex overflow-auto px-1 pb-2">
       <div
         *ngFor="let product of category.products"
-        class="card me-3"
-        style="min-width: 250px; max-width: 250px;"
+        class="card me-3 shadow-sm border-0"
+        style="min-width: 250px; max-width: 250px; cursor: pointer;"
+        [routerLink]="['/product', product.id]"  
       >
         <img
           [src]="product.image"
           class="card-img-top"
-          style="height: 160px; object-fit: cover;"
+          style="height: 160px; object-fit: cover; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;"
           alt="{{ product.name }}"
         />
         <div class="card-body text-center">
-          <h6 class="card-title">{{ product.name }}</h6>
-          <p class="text-muted">${{ product.price }}</p>
-          <button class="btn btn-sm btn-outline-primary">
+          <h6 class="card-title fw-semibold">{{ product.name }}</h6>
+          <p class="text-muted mb-2">${{ product.price }}</p>
+          <button
+            class="btn btn-outline-primary btn-sm"
+            (click)="$event.stopPropagation()"  
+          >
             <i class="bi bi-cart-plus me-1"></i> Add to Cart
           </button>
         </div>
@@ -29,4 +36,3 @@
 
   </div>
 </div>
-

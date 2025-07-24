@@ -1,0 +1,63 @@
+.custom-cart-btn {
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-cart-btn:hover {
+  background-color: #0284c7;
+  box-shadow: 0 6px 12px rgba(0, 170, 255, 0.4);
+}
+
+.custom-cart-btn:disabled {
+  background-color: #b2dff6;
+  color: #ffffffcc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.custom-wishlist-btn {
+  background-color: white;
+  color: #0ea5e9;
+  border: 2px solid #0ea5e9;
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.custom-wishlist-btn:hover {
+  background-color: #e0f4ff;
+  color: #0284c7;
+  border-color: #0284c7;
+}
+
+.custom-buy-btn {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(34, 197, 94, 0.3);
+  transition: all 0.3s ease;
+}
+
+.custom-buy-btn:hover {
+  background-color: #16a34a;
+  box-shadow: 0 6px 12px rgba(34, 197, 94, 0.4);
+}
